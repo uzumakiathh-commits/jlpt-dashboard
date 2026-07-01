@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT N5 Review Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1> JLPT N5 Review Dashboard</h1>
+        <button id="themeBtn">🌙 Dark / ☀ Light</button>
+    </header>
+
+    <section class="card">
+        <h2>📅 Monday - Friday Schedule</h2>
+
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Task</th>
+            </tr>
+
+            <tr>
+                <td>7:00 - 7:30 PM</td>
+                <td>Dinner</td>
+            </tr>
+
+            <tr>
+                <td>7:30 - 8:15 PM</td>
+                <td>Vocabulary</td>
+            </tr>
+
+            <tr>
+                <td>8:15 - 9:15 PM</td>
+                <td>Grammar + Bunkei</td>
+            </tr>
+
+            <tr>
+                <td>9:15 - 9:30 PM</td>
+                <td>Break</td>
+            </tr>
+
+            <tr>
+                <td>9:30 - 10:15 PM</td>
+                <td>Exercises</td>
+            </tr>
+
+            <tr>
+                <td>10:15 - 11:00 PM</td>
+                <td>Listening + Writing</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="card">
+        <h2>✅ Daily Checklist</h2>
+
+        <label><input type="checkbox" class="task"> Vocabulary</label>
+        <label><input type="checkbox" class="task"> Grammar</label>
+        <label><input type="checkbox" class="task"> Exercises</label>
+        <label><input type="checkbox" class="task"> Listening</label>
+        <label><input type="checkbox" class="task"> Writing</label>
+
+        <div class="progress-container">
+            <div id="progressBar" class="progress-bar">0%</div>
+        </div>
+    </section>
+
+    <section class="card">
+       <h2>📚 Lesson Progress</h2>
+
+       <p id="lessonCount" style="margin-bottom:15px;">
+        0 / 25 Lessons
+       </p>
+
+       <button id="completeLessonBtn" disabled>
+        ✅ Complete Lesson
+       </button>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
